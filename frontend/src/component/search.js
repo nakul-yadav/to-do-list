@@ -35,7 +35,7 @@ else{
 
 
 const updateData=async(id,task)=>{
-  const add = await fetch("http://localhost:4000/api/updatetask", {
+  const add = await fetch("/api/updatetask", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -49,7 +49,7 @@ const updateData=async(id,task)=>{
 }
 
 const addDataToDb=async()=>{
-  const add = await fetch("http://localhost:4000/api/addTask", {
+  const add = await fetch("/api/addTask", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

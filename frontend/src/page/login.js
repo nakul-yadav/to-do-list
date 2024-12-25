@@ -12,7 +12,7 @@ const Login = () => {
 
   const verifyLogin=async(e)=>{
     e.preventDefault();
-    const add = await fetch("http://localhost:4000/api/login", {
+    const add = await fetch("/api/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

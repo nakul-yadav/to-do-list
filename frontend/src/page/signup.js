@@ -7,7 +7,7 @@ const Signup = () => {
 
   return (
     <div>
-       <form method='post' action='http://localhost:4000/api/signup'>
+       <form method='post' action='/api/signup'>
        <input type='name' placeholder='type name here' name='naam'/>
         <input type='email' placeholder='type email here' name='email'/>
         <input type='password' placeholder='type your password here' name='password'/>

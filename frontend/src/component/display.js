@@ -21,7 +21,7 @@ setAddItem(newList);
 }
 
 const deleteData=async(id)=>{
-  const add = await fetch("http://localhost:4000/api/deletetask", {
+  const add = await fetch("/api/deletetask", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -35,7 +35,7 @@ const deleteData=async(id)=>{
    
 
 const fetchData=async()=>{
-await fetch('http://localhost:4000/api/addtask').then((res)=>res.json()).then(data=>data.userData).then((todoData=>setAddItem(todoData.data)))
+await fetch('/api/addtask').then((res)=>res.json()).then(data=>data.userData).then((todoData=>setAddItem(todoData.data)))
 }
 
 
