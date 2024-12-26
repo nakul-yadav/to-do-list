@@ -7,7 +7,7 @@ const cors=require('cors');
 
 
 const app=express();
-
+const port=process.env.PORT||4000;
 
 
 // calling databse
@@ -21,6 +21,6 @@ app.use(bodyParser.json())
 app.use('/',router);
 app.use('/api',controller)
 
-app.listen('4000',()=>{
+app.listen(port,()=>{
 console.log('server started')
 })
